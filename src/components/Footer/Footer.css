@@ -1,0 +1,42 @@
+*{
+    font-family: 'Roboto', sens-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #d3ad7f;
+    --bg:#010103;
+}
+.footer {
+    display: flex;
+    justify-content:space-between;
+    padding: 4px 100px;
+    position: fixed;
+    bottom: 0;
+    background-color: #f0f0f0;
+    z-index: 99;
+    width: 100%;
+
+}
+
+.footer .author span {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.footer .author {
+    color: #010103;
+    font-weight: 700;
+    font-size:2rem;
+}
+
+.footer .link i {
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 10px;
+}
+.footer .link i:hover {
+    color: var(--main-color);
+}
