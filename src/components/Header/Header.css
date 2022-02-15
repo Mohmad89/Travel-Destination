@@ -16,8 +16,14 @@ header {
     position: fixed;
     z-index: 999;
     display:flex;
-    justify-content: center;
-    
+    justify-content: space-between;
     padding: 10px 200px;
+}
+
+header .navigation {
+    display: flex;
+    gap: 1.5rem;
+    color: black;
+    box-sizing: border-box;
 }
 
