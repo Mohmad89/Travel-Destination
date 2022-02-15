@@ -1,25 +1,15 @@
 import './Tours.css'
-
+import Tour from './tour/Tour'
+import { Link } from 'react-router-dom'
 function Tours (info){
     return (
         <>
-            {info.data.map (val =>{
+            {info.data.map(val => {
                 return (
-                    <section className="city">
-                        <div className="container">
-                            <div className="card">
-                                <img src={val.image} alt={val.name} />
-                                <div className="content">
-                                    <p className="name">{val.name}</p>
-                                    <p className="id">{val.id}</p>
-                                    <p className="info">{val.info}</p>
-                                    <p className="price">$ {val.price}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                );  
-            })};
+                    <Link to= {`/city/${val.id}`}><Tour data = {val}/></Link>
+                )
+            })}
+        
         </>
     );
 }

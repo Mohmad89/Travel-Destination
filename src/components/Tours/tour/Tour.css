@@ -67,12 +67,12 @@ section {
     color: #010103;
     margin-bottom: 10px;
 }
-/* .content .info {
+.content .info {
     font-size: 1.2rem;
     color: black;
     line-height: 1.2;
     
-} */
+}
 
 .content .price {
     font-size: 2.5rem;
